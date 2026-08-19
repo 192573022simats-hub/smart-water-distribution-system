@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6f8;
+    color: #222;
+}
+
+header {
+    background: #075985;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #0c4a6e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.normal {
+    color: green;
+    font-weight: bold;
+}
+
+.section-box {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background: #e0f2fe;
+}
+
+.safe {
+    padding: 20px;
+    border-left: 6px solid green;
+    background: #ecfdf5;
+}
+
+.maintenance-box {
+    padding: 20px;
+    background: #f0f9ff;
+    border-left: 6px solid #0284c7;
+}
+
+button {
+    background: #075985;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0c4a6e;
+}
+
+#reportMessage {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    background: #0c4a6e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+}
